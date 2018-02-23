@@ -1,0 +1,19 @@
+.homeBackgroundDiv {
+  min-height: 1200px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+  url("food.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.food {
+  color: #CD3278;
+  /* text-align: right; */
+  /* padding-right: 20px; */
+  font-size: 1000px;
+}
