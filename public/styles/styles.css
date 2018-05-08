@@ -13,13 +13,28 @@
   background-size: cover;
 }
 
-.food {
+.nav {
+  justify-content: center;
+}
+
+.nav a {
+  color: White;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#food {
   color: #CD3278;
-  /* text-align: right; */
-  /* padding-right: 20px; */
-  font-size: 900px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  font-size: 500px;
+}
+
+@media only screen and (max-width: 320px) {
+
+   body {
+      font-size: 2em;
+   }
+
 }
