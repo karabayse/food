@@ -4,28 +4,18 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-
-    <!-- <script src="vendors/angular-route.min.js" charset="utf-8"></script> -->
+    <script src="vendors/jquery.min.js" charset="utf-8"></script>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="scripts/foodController.js" charset="utf-8"></script>
+    <script src="scripts/shopping.js" charset="utf-8"></script>
     <title>Food</title>
   </head>
-  <body >
-    <!-- ng-app="myApp" -->
+  <body ng-app="myApp">
 
-    <div class="homeBackgroundDiv">
+    <base href="/">
 
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="shopping.html">Shopping List</a>
-        <a href="recipes.html">Recipes</a>
-        <a href="conversions.html">Conversions</a>
-      </nav>
+    <main ng-view></main>
 
-      <div class="home">
-        <span id="food">food.</span>
-      </div>
-
-    </div>
-
-    <script src="scripts/shopping.js" charset="utf-8"></script>
   </body>
 </html>

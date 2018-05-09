@@ -1,6 +1,8 @@
+/* Home */
+
 .homeBackgroundDiv {
-  margin-top: -2em;
-  height: 100%;
+  /* margin-top: -2em; */
+  height: 100vh;
   padding-bottom: 100px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
@@ -15,6 +17,8 @@
 
 .nav {
   justify-content: center;
+  text-align: center;
+  z-index: 1;
 }
 
 .nav a {
@@ -26,10 +30,32 @@
   margin-right: 20px;
 }
 
+.home {
+  text-align: center;
+  height: 100vh;
+}
+
 #food {
   color: #CD3278;
   font-size: 500px;
 }
+
+
+/* Shoping List */
+
+.shopping-div {
+  background-color: #C1C1C1;
+  height: 100vh;
+}
+
+#shopping-list {
+  color: #CD3278;
+}
+
+
+
+
+/* Media Queries */
 
 @media only screen and (max-width: 320px) {
 
