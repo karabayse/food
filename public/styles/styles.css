@@ -1,4 +1,4 @@
-/* Home */
+/* HOME */
 
 .homeBackgroundDiv {
   /* margin-top: -2em; */
@@ -32,27 +32,49 @@
 
 .home {
   text-align: center;
-  height: 100vh;
 }
 
 #food {
   color: #CD3278;
-  font-size: 500px;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 
-/* Shoping List */
+/* SHOPPING LIST */
 
 .shopping-div {
-  background-color: #C1C1C1;
+  background-color: #EAEAEA;
   height: 100vh;
 }
 
-#shopping-list {
-  color: #CD3278;
+#shopping-list-header {
+  color: #8A3324;
+}
+
+/* RECIPES */
+
+.recipes-div {
+  background-color: #EAEAEA;
+  height: 100vh;
+}
+
+#recipes-header {
+  color: #8A3324;
 }
 
 
+/* CONVERSIONS */
+
+.conversions-div {
+  background-color: #EAEAEA;
+  height: 100vh;
+}
+
+#conversions-header {
+  color: #8A3324;
+}
 
 
 /* Media Queries */

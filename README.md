@@ -1,4 +1,4 @@
-![Food Home Page](food-home.png)
+![Food Home Page](public/styles/images/food-home2.png)
 
 ## Food
 
