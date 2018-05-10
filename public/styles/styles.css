@@ -22,12 +22,14 @@
 }
 
 .nav a {
-  color: White;
+  color: #FFF;
   font-size: 20px;
   text-align: center;
+  /* text-shadow: 1px 1px #000; */
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 .home {
@@ -51,6 +53,10 @@
 
 #shopping-list-header {
   color: #8A3324;
+}
+
+.btn {
+  color: Grey;
 }
 
 /* RECIPES */
