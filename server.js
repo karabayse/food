@@ -1,9 +1,10 @@
 // requires
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-var path = require('path');
-// var index = require('./modules/routes/index');
+let express = require('express');
+let app = express();
+let bodyParser = require('body-parser');
+let path = require('path');
+// let index = require('./modules/routes/index');
+let shopping = require('./modules/routes/shopping');
 
 
 // uses
@@ -11,6 +12,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 // app.use('/', index);
+app.use('/shopping', shopping);
 
 app.get('/*', function(req, res) {
   console.log('base url hit');

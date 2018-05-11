@@ -9,13 +9,17 @@
   </nav>
 
   <div class="container">
+    <br>
     <h2 id="shopping-list-header">Shopping List</h2>
+    <hr>
     <div class="shopping-list">
-      <input type="text" name="" value="" placeholder="New Item">
 
-      <button class="btn btn-default" id="addItemButton">Add Item</button>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="New Item" ng-model="sc.shoppingInput">
+        <button class="btn btn-default" id="addItemButton" ng-click="sc.addItem()">Add Item</button>
+      </div>
 
-      <div id="itemList">
+      <div id="itemList" data-ng-init="ec.showShoppingList()">
 
       </div>
     </div>
