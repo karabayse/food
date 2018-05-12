@@ -10,7 +10,7 @@ let shoppingSchema = new mongoose.Schema({
 let shoppingModel = mongoose.model('shoppingModel', shoppingSchema);
 
 router.post('/', function(req, res) {
-  console.log('contact url hit', req.body);
+  console.log('shopping url hit', req.body);
   let newShoppingItem = req.body;
   console.log('req.body:', req.body);
   shoppingModel( newShoppingItem ).save().then(function() {
@@ -20,6 +20,12 @@ router.post('/', function(req, res) {
   });
 }); // end router.post for shopping
 
-
+router.get('/', function(req, res){
+  console.log('shoppingObject');
+  shoppingModel.find().then(function(message) {
+    res.send(message);
+    console.log('message:', message);
+  });
+}); // end contact get call
 
 module.exports = router;

@@ -1,6 +1,6 @@
 console.log('in shoppingController.js');
 
-myApp.controller('ShoppingController', function(       ) {
+myApp.controller('ShoppingController', function(ShoppingService) {
   console.log('in ShoppingController');
   let vm = this;
 
