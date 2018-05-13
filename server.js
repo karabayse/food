@@ -2,7 +2,7 @@
 let express = require('express');
 let app = express();
 let index = require('./modules/routes/index');
-let shopping = require('./modules/routes/shopping');
+let shoppingRoute = require('./modules/routes/shoppingRoute');
 let bodyParser = require('body-parser');
 let path = require('path');
 let mongoose = require('mongoose');
@@ -14,7 +14,7 @@ app.use(express.static('public'));
 app.use('/', index);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use('/shopping', shopping);
+app.use('/shoppingRoute', shoppingRoute);
 
 // globals
 var port = process.env.PORT || 6006;

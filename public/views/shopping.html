@@ -1,4 +1,4 @@
-<div class="shopping-div">
+<div ng-controller="ShoppingController as sc" class="shopping-div">
 
   <nav class="nav">
     <span id="food">food.</span>
@@ -16,7 +16,7 @@
 
       <div class="input-group">
         <input type="text" class="form-control" placeholder="New Item" ng-model="sc.shoppingInput">
-        <button class="btn btn-default" id="addItemButton" ng-click="sc.addItem()">Add Item</button>
+        <button class="btn btn-default" type="submit" id="addItemButton" ng-click="sc.addItem()">Add Item</button>
       </div>
 
       <div id="itemList" data-ng-init="ec.showShoppingList()">
