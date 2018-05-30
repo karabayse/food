@@ -3,7 +3,7 @@
 myApp.service('ShoppingService', function($http) {
   let sv = this;
 
-  // POST for contact
+  // POST for shopping 
   sv.addItem = function(shoppingItem) {
     console.log('in addItem POST in shoppingService.js');
     return $http({
