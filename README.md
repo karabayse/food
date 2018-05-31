@@ -2,5 +2,6 @@
 
 ## Food
 
-Full stack application in the beginning stages
-* User will be able to add, update, and delete shopping list items
+MEAN stack application
+* User may add add shopping list items
+* User will be able to update and delete shopping list items
