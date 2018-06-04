@@ -19,8 +19,10 @@
         <button class="btn btn-default" type="submit" id="addItemButton" ng-click="sc.addItem()">Add Item</button>
       </div>
 
-      <div id="itemList" data-ng-init="ec.showShoppingList()">
+      <div id="itemList" data-ng-init="sc.showShoppingList()">
+        <div class="col-sm-3" ng-repeat="data in sc.shopping">
 
+        </div>
       </div>
     </div>
   </div>
