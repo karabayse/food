@@ -20,7 +20,7 @@
       </div>
 
       <div id="itemList" data-ng-init="sc.showShoppingList()">
-        <div class="col-sm-3" ng-repeat="data in sc.shopping">
+        <div class="col-sm-3" ng-repeat="data in sc.items track by $index">
           {{ data.item }}
         </div>
       </div>
