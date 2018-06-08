@@ -11,6 +11,7 @@ vm.addItem = function() {
   }; // end shoppingObject
   console.log('shoppingObject:', shoppingObject);
   ShoppingService.addItem(shoppingObject).then(function() {
+    sweetAlert("Item Added!");
     vm.shoppingInput = '';
   }); // end ShoppingService.addItem
 };
