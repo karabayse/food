@@ -9,6 +9,14 @@ let shoppingSchema = new mongoose.Schema({
 }); // end shoppingSchema
 let shoppingModel = mongoose.model('shoppingModel', shoppingSchema);
 
+router.get('/', function(req, res){
+  console.log('shoppingObject');
+  shoppingModel.find().then(function(item) {
+    res.send(item);
+    console.log('item:', item);
+  });
+}); // end shopping get call
+
 router.post('/', function(req, res) {
   console.log('shopping url hit', req.body);
   let newShoppingItem = req.body;
@@ -20,12 +28,5 @@ router.post('/', function(req, res) {
   });
 }); // end router.post for shopping
 
-router.get('/', function(req, res){
-  console.log('shoppingObject');
-  shoppingModel.find().then(function(message) {
-    res.send(message);
-    console.log('message:', message);
-  });
-}); // end contact get call
 
 module.exports = router;

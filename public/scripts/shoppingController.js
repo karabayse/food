@@ -16,7 +16,7 @@ vm.addItem = function() {
   }); // end ShoppingService.addItem
 };
 
-vm.showShoppingList = function() {
+vm.getShoppingList = function() {
     console.log('in showShoppingList');
     ShoppingService.getShoppingList().then(function() {
       vm.items = ShoppingService.data;

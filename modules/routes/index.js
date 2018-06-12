@@ -12,7 +12,7 @@ router.get('/*', function(req, res) {
   res.sendFile(path.resolve('public/views/index.html'));
 }); // end router.get for index.html
 
-router.get('/shoppingRoute', function(req, res) {
+router.get('/shopping', function(req, res) {
   console.log('shopping url hit');
   res.sendFile(path.resolve('views/shopping.html'));
 }); // end router.get for shopping.html
