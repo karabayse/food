@@ -14,7 +14,7 @@ router.get('/*', function(req, res) {
 
 router.get('/shopping', function(req, res) {
   console.log('shopping url hit');
-  res.sendFile(path.resolve('public/views/shopping.html'));
+  res.sendFile(path.resolve('views/shopping.html'));
 }); // end router.get for shopping.html
 
 module.exports = router;

@@ -4,6 +4,16 @@ myApp.controller('ShoppingController', function(ShoppingService) {
   console.log('in ShoppingController');
   let vm = this;
 
+ vm.getShoppingList = function() {
+      console.log('in showShoppingList');
+      ShoppingService.getShoppingList().then(function() {
+        vm.items = ShoppingService.data;
+        console.log('back in ShoppingController with:', vm.items);
+      });
+    }; // end showShoppingList
+
+
+
 vm.addItem = function() {
   console.log('in addItem function');
   let shoppingObject = {
@@ -16,12 +26,4 @@ vm.addItem = function() {
   }); // end ShoppingService.addItem
 };
 
-vm.getShoppingList = function() {
-    console.log('in showShoppingList');
-    ShoppingService.getShoppingList().then(function() {
-      vm.items = ShoppingService.data;
-      console.log('back in EntryController with:', vm.items);
-    });
-  }; // end showShoppingList
-
-}); // end controller
+  }); // end controller
