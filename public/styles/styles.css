@@ -98,6 +98,13 @@ input {
   color: #8A3324;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 80% 10%;
+  height: 100vh; /* new */
+}
+
 
 /* Media Queries */
 

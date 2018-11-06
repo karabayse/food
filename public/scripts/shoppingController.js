@@ -13,17 +13,16 @@ myApp.controller('ShoppingController', function(ShoppingService) {
     }; // end showShoppingList
 
 
+  vm.addItem = function() {
+    console.log('in addItem function');
+    let shoppingObject = {
+      item: vm.shoppingInput
+    }; // end shoppingObject
+    console.log('shoppingObject:', shoppingObject);
+    ShoppingService.addItem(shoppingObject).then(function() {
+      sweetAlert("Item Added!");
+      vm.shoppingInput = '';
+    }); // end ShoppingService.addItem
+  };
 
-vm.addItem = function() {
-  console.log('in addItem function');
-  let shoppingObject = {
-    item: vm.shoppingInput
-  }; // end shoppingObject
-  console.log('shoppingObject:', shoppingObject);
-  ShoppingService.addItem(shoppingObject).then(function() {
-    sweetAlert("Item Added!");
-    vm.shoppingInput = '';
-  }); // end ShoppingService.addItem
-};
-
-  }); // end controller
+}); // end controller
