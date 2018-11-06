@@ -25,4 +25,24 @@ myApp.controller('ShoppingController', function(ShoppingService) {
     }); // end ShoppingService.addItem
   };
 
+
+  vm.delete = function(index) {
+    console.log('in delete function');
+    sweetAlert({
+      title: "Are you sure?",
+      text: "Are you sure you want to delete this item?",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#CD3278",
+      confirmButtonText: "Yes, delete it",
+      closeOnConfirm: false
+    }).then(function() {
+      console.log('delete item confirmed');
+      ShoppingService.delete(vm.items[index]._id).then(function() {
+        sweetAlert("Item Deleted!");
+        vm.getShoppingList();
+      });
+    });
+  };
+
 }); // end controller

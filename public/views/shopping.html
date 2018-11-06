@@ -19,9 +19,12 @@
         <button class="btn btn-default" type="submit" id="addItemButton" ng-click="sc.addItem()">Add Item</button>
       </div>
 
+      <br>
+
       <div id="itemList" data-ng-init="sc.getShoppingList()">
-        <div class="col-sm-3" ng-repeat="data in sc.items track by $index">
-          <!-- track by $index -->
+        <div class="col-sm-3 fa fa-circle-o"
+        ng-repeat="data in sc.items track by $index">
+          <button type="button" id="deleteButton" ng-click="sc.delete($index)">Delete Item</button>
           {{ data.item }}
         </div>
       </div>
