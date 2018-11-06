@@ -3,7 +3,7 @@ console.log('in shoppingController.js');
 myApp.controller('ShoppingController', function(ShoppingService) {
   console.log('in ShoppingController');
   let vm = this;
-
+  
  vm.getShoppingList = function() {
       console.log('in showShoppingList');
       ShoppingService.getShoppingList().then(function() {
@@ -25,7 +25,6 @@ myApp.controller('ShoppingController', function(ShoppingService) {
     }); // end ShoppingService.addItem
   };
 
-
   vm.delete = function(index) {
     console.log('in delete function');
     sweetAlert({
@@ -43,6 +42,6 @@ myApp.controller('ShoppingController', function(ShoppingService) {
         vm.getShoppingList();
       });
     });
-  };
+  }; // end delete function
 
 }); // end controller

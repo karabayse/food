@@ -26,4 +26,15 @@ myApp.service('ShoppingService', function($http) {
     });
   };
 
+
+// Delete Shopping Item
+sv.delete = function(id) {
+  return $http({
+    method: 'DELETE',
+    url:'/shoppingRoute/' + id,
+  }).then(function(response) {
+    console.log('Shopping Service delete item:', response);
+  });
+};
+
 }); // end service

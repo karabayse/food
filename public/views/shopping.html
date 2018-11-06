@@ -24,8 +24,8 @@
       <div id="itemList" data-ng-init="sc.getShoppingList()">
         <div class="col-sm-3 fa fa-circle-o"
         ng-repeat="data in sc.items track by $index">
-          <button type="button" id="deleteButton" ng-click="sc.delete($index)">Delete Item</button>
           {{ data.item }}
+          <button type="button" id="deleteButton" ng-click="sc.delete($index)">Delete Item</button>
         </div>
       </div>
     </div>
