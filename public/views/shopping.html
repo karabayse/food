@@ -15,8 +15,10 @@
     <div class="shopping-list">
 
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="New Item" ng-model="sc.shoppingInput">
-        <button class="btn btn-default" type="submit" id="addItemButton" ng-click="sc.addItem()">Add Item</button>
+        <input type="text" class="form-control" placeholder="New Item"
+          ng-model="sc.shoppingInput">
+        <button class="btn btn-default" type="submit" id="addItemButton"
+          ng-click="sc.addItem()">Add Item</button>
       </div>
 
       <br>
@@ -25,7 +27,8 @@
         <div class="col-sm-3 fa" id="listItems"
         ng-repeat="data in sc.items track by $index">
           {{ data.item }}
-          <button type="button" id="deleteButton" class="fa fa-close" ng-click="sc.delete($index)"></button>
+          <button type="button" id="deleteButton" class="fa fa-close"
+            ng-click="sc.delete($index)"></button>
         </div>
       </div>
     </div>
