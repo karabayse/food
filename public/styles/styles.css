@@ -78,6 +78,10 @@ input {
   float: right;
 }
 
+#listItems {
+  border-left: 5px solid #CD3278;
+}
+
 
 
 /* RECIPES */

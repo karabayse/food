@@ -22,7 +22,7 @@
       <br>
 
       <div id="itemList" data-ng-init="sc.getShoppingList()">
-        <div class="col-sm-3 fa fa-circle"
+        <div class="col-sm-3 fa" id="listItems"
         ng-repeat="data in sc.items track by $index">
           {{ data.item }}
           <button type="button" id="deleteButton" class="fa fa-close" ng-click="sc.delete($index)"></button>
