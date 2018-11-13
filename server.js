@@ -17,7 +17,7 @@ app.use('/', index);
 app.use('/shoppingRoute', shoppingRoute);
 
 // globals
-var port = process.env.PORT || 6006;
+let port = process.env.PORT || 6006;
 
 // spin up server
 app.listen(port, function(){

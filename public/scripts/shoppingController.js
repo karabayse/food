@@ -3,7 +3,7 @@ console.log('in shoppingController.js');
 myApp.controller('ShoppingController', function(ShoppingService) {
   console.log('in ShoppingController');
   let vm = this;
-  
+
  vm.getShoppingList = function() {
       console.log('in showShoppingList');
       ShoppingService.getShoppingList().then(function() {
@@ -34,7 +34,7 @@ myApp.controller('ShoppingController', function(ShoppingService) {
       showCancelButton: true,
       confirmButtonColor: "#CD3278",
       confirmButtonText: "Yes, delete it",
-      closeOnConfirm: false
+      // closeOnConfirm: false
     }).then(function() {
       console.log('delete item confirmed');
       ShoppingService.delete(vm.items[index]._id).then(function() {

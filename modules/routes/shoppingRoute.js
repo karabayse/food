@@ -28,5 +28,16 @@ router.post('/', function(req, res) {
   });
 }); // end router.post for shopping
 
+router.delete('/:id', function(req, res) {
+  var id = req.params.id;
+  console.log(id);
+  shoppingModel.remove( {_id: id }).then(function(err) {
+    if(!err) {
+      res.send('No error!');
+    } else {
+      res.send('error');
+    }
+  });
+}); // end router.delete
 
 module.exports = router;
