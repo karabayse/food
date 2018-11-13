@@ -74,6 +74,10 @@ input {
   color: #8A3324;
 }
 
+#deleteButton {
+  float: right;
+}
+
 
 
 /* RECIPES */
