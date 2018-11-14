@@ -7,12 +7,13 @@ myApp.controller('ConversionsController', function(ConversionsService) {
   vm.convertInput = function() {
     console.log('in convertInput function');
     let conversionObject = {
-      input: vm.conversionInput
+      input: vm.conversionsInput,
+      select: vm.conversionsSelect
     }; // end conversionsObject
     console.log('conversionObject:', conversionObject);
     ShoppingService.convertInput(conversionObject).then(function() {
       sweetAlert("Item Added!");
-      vm.conversionInput = '';
+      vm.conversionsInput = '';
     }); // end ConversionsService.addItem
   };
 

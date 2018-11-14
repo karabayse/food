@@ -14,6 +14,7 @@
     <hr>
     <!-- <div class="conversions"> -->
     <div class="grid-container">
+
       <div class="grid-item">
         <i class="fa fa-spoon" style="font-size:200%"></i>
         <i class="fa fa-spoon" style="font-size:200%"></i>
@@ -22,6 +23,7 @@
         <i class="fa fa-spoon" style="font-size:250%"></i>
         <p>3 TSP = 1 TBSP</p>
       </div>
+
       <div class="grid-item">
         <i class="fa fa-spoon" style="font-size:250%"></i>
         <i class="fa fa-spoon" style="font-size:250%"></i>
@@ -33,29 +35,35 @@
         <p>4 TBSP = 1/4 CUP</p>
       </div>
 
-      <div class="grid-item">3</div>
       <div class="grid-item form-group">
         <input class="form-control" type="text"
           placeholder="Enter calculation input here"
           ng-model="cc.conversionsInput">
         <br>
-        <select class="form-control">
+        <select class="form-control" ng-model="cc.conversionsSelect">
           <option value="TSP">TSP</option>
           <option value="TBSP">TBSP</option>
           <option value="CUP">CUP</option>
           <option value="OZ">OZ</option>
         </select>
         <br>
-        <button type="button" class="btn btn-light btn-block"
+        <button type="button" class="btn btn-light btn-block" id="convert-button"
           ng-click="cc.convertInput()">Convert</button>
       </div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-      <div class="grid-item">7</div>
-      <div class="grid-item">8</div>
-      <div class="grid-item">9</div>
-    </div>
-    <!-- </div> -->
+
+      <div class="grid-item"></div>
+
+      <div class="grid-item"></div>
+
+      <div class="grid-item"></div>
+
+      <div class="grid-item"></div>
+
+      <div class="grid-item"></div>
+
+      <div class="grid-item"></div>
+    </div>   <!-- end grid container -->
+
   </div>
 
 </div>
