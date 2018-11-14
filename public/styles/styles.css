@@ -7,12 +7,10 @@
 }
 
 .nav a {
-  /* color: #FFF; */
-  /* color: #8B8386; */
-  color: #8E8E8E;
+  color: #FFF;
+  /* color: #8E8E8E; */
   font-size: 20px;
   text-align: center;
-  /* text-shadow: 1px 1px #000; */
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
@@ -129,7 +127,7 @@ input {
 }
 
 #convert-button {
-  
+
 }
 
 

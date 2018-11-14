@@ -1,5 +1,7 @@
 ![Food Home Page](public/styles/images/food-home2.png)
 
+![Shopping List View](public/styles/images/shopping-list-view.png)
+
 ## Food
 
 MEAN stack application
