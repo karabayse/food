@@ -1,4 +1,4 @@
-<div ng-controller="ConversionsController as sc" class="conversions-div">
+<div ng-controller="ConversionsController as cc" class="conversions-div">
 
   <nav class="nav">
     <span id="food">food.</span>
@@ -28,13 +28,16 @@
         <i class="fa fa-spoon" style="font-size:250%"></i>
         <i class="fa fa-spoon" style="font-size:250%"></i>
         <i id="equals">=</i>
-        <img src="styles/images/measuring-cup.png" alt="measuring cup" height="35%">
+        <img src="styles/images/measuring-cup.png" alt="measuring cup"
+          height="25%" id="measuring-cup">
         <p>4 TBSP = 1/4 CUP</p>
       </div>
 
       <div class="grid-item">3</div>
       <div class="grid-item form-group">
-        <input class="form-control" type="text" placeholder="Enter calculation input here">
+        <input class="form-control" type="text"
+          placeholder="Enter calculation input here"
+          ng-model="cc.conversionsInput">
         <br>
         <select class="form-control">
           <option value="TSP">TSP</option>
@@ -43,7 +46,8 @@
           <option value="OZ">OZ</option>
         </select>
         <br>
-        <button type="button" class="btn btn-light btn-block">Convert</button>
+        <button type="button" class="btn btn-light btn-block"
+          ng-click="cc.convertInput()">Convert</button>
       </div>
       <div class="grid-item">5</div>
       <div class="grid-item">6</div>
