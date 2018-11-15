@@ -22,6 +22,7 @@ myApp.controller('ShoppingController', function(ShoppingService) {
     ShoppingService.addItem(shoppingObject).then(function() {
       sweetAlert("Item Added!");
       vm.shoppingInput = '';
+      vm.getShoppingList();
     }); // end ShoppingService.addItem
   };
 
