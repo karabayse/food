@@ -7,3 +7,4 @@ MEAN stack application
 * User may delete shopping list items
 * User will be able to add, update, and delete recipes
 * User will be able to calculate conversions
+* Uses CSS Grid Layout
